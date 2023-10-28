@@ -1,0 +1,42 @@
+:root {
+    --blue-green: #099d8d
+}
+
+.about-title {
+    text-transform: uppercase;
+    color: var(--blue-green);
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-us {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.adalaber1,
+.adalaber2,
+.adalaber3,
+.adalaber4 {
+    margin-top: 30px;
+}
+
+.contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.contact-icon {
+    color: var(--blue-green);
+    padding: 10px;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
