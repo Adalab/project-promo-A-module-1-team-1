@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --blue-green: #099d8d
@@ -23,15 +18,19 @@
 
 .headerh1 {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;/*cammmmmmmmmbiar a Rubik */
+    line-height: 30px;
+    font-family: 'Rubik', sans-serif;
     color: white;
 }
 
 .menu {    
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
     display: flex;
+    align-items: center;
 }
 
 .link {
@@ -44,7 +43,7 @@
     background-image: url(/images/img1.jpg);
     background-size:100%;
     background-repeat: no-repeat;
-    background-position:top;
+    background-position: top;
     width: 100%;
     height: 70vh;
     display: flex;
@@ -55,12 +54,19 @@
 .headerh2{
     background-color: #ffffff;
     height: 90px;
-    opacity: 0.8;
-    padding: 15px;
-    margin-left: 140px;
+    width: 514px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    font-family:Arial, Helvetica, sans-serif;/*cammmmmmmmmbiar a opensans*/
     font-weight: 600;
+    opacity: 0.8;
+    padding: 15px 30px;
+    margin-left: 140px;
+    line-height: 1.25;
+   
+    
+    
+    
+    
 }
 
 .about-title {
