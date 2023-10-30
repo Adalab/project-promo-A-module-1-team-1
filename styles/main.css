@@ -1,6 +1,7 @@
-
 :root {
-    --blue-green: #099d8d
+    --blue-green: #099d8d;
+    --open-sans: 'Open Sans', sans-serif;
+    --rubik: 'Rubik', sans-serif;
 }
 
 .header1 {
@@ -13,7 +14,6 @@
     align-items: center;
     padding-left: 140px;
     padding-right: 140px;
-
 }
 
 .headerh1 {
@@ -61,18 +61,13 @@
     opacity: 0.8;
     padding: 15px 30px;
     margin-left: 140px;
-    line-height: 1.25;
-   
-    
-    
-    
-    
+    line-height: 1.25;    
 }
 
 .about-title {
     text-transform: uppercase;
     color: var(--blue-green);
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--rubik);
     font-size: 24px;
     font-weight: 500;
 }
@@ -102,8 +97,15 @@
 }
 
 .name {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open-sans);
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.bio {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: var(--open-sans);
 }
