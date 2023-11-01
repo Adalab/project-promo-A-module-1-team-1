@@ -64,6 +64,38 @@
     line-height: 1.25;
 }
 
+.team-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team {
+    font-family: var(--rubik);
+    color: var(--blue-green);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.team + p {
+    font-family: var(--open-sans);
+    text-align: center;
+    margin: 30px;
+}
+
+.sandw {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
 .about-title {
     text-transform: uppercase;
     color: var(--blue-green);
