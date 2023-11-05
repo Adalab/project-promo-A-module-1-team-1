@@ -1,8 +1,38 @@
+:root {
+  --cool-grey: #b8b8b9;
+  --white: #ffffff;
+  --gunmetal: #54585a;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
 .page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+  position: relative;
+  border-top: solid 1px var(--cool-grey);
+  padding:  24px 138px 47px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.groupName {
+  margin: 6px 428px 15px 0;
+  font-family: var(--open-sans);
+  line-height: 1.43;
+  color: var(--cool-grey);
+}
+
+.adalabLogo {
+  width: 115.9px;
+  height: 45px;
+  margin: 15px 484.1px 4px 0;
+}
+
+.secondaryMenu {
+  opacity: 0.75;
+  font-family: var(--open-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gunmetal);
+  line-height: 2.14;
 }
