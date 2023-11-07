@@ -11,10 +11,7 @@
     margin: 30px 0 30px 0;
 }
 
-.adalaber1,
-.adalaber2,
-.adalaber3,
-.adalaber4 {
+.adalaber {
     margin-top: 30px;
 }
 
@@ -35,7 +32,56 @@
     margin: 15px 0 15px 0;
 }
 
-.bio {
+.info {
     margin: 0 15px 0 15px;
+
+}
+
+.bio {
     font-family: $font-2;
+}
+
+@media (min-width: 768px) {
+
+    .adalaber {
+        display: flex;
+        width: 100vw;
+        padding: 30px 45px 30px 45px;
+    }
+
+    .adalaber1,
+    .adalaber3 {
+        flex-direction: row;
+
+        .info {
+            align-items: flex-start;
+        }
+
+        .bio {
+            text-align: left;
+        }
+    }
+
+    .adalaber2,
+    .adalaber4 {
+        flex-direction: row-reverse;
+
+        .info {
+            align-items: flex-end;
+        }
+
+        .bio {
+            text-align: right;
+        }
+
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
 }
