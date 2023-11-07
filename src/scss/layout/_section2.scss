@@ -1,0 +1,41 @@
+.about-title {
+    text-transform: uppercase;
+    color: $color-bg1;
+    font-family: $font-1;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-us {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.adalaber1,
+.adalaber2,
+.adalaber3,
+.adalaber4 {
+    margin-top: 30px;
+}
+
+.contact {
+    margin: 15px 0 15px 0;
+    display: inline-block;
+}
+
+.contact-icon {
+    color: $color-bg1;
+    padding: 10px;
+}
+
+.name {
+    font-family: $font-2;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+}
+
+.bio {
+    margin: 0 15px 0 15px;
+    font-family: $font-2;
+}
