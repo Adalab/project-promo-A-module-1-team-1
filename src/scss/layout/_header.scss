@@ -36,6 +36,7 @@ height: 60px;
   height: 45px;
 }
 
+
 /*header tablet*/
 @media (min-width: 768px) {
   .header2 {
@@ -54,6 +55,18 @@ height: 60px;
   justify-content: space-between;
   gap: 15px;
 }
+/*medidas movil 375*/
+@media (min-width: 375px) {
+  .menu {
+    gap: 29px;
+  }
+}
+/*medidas movil 425*/
+@media (min-width: 425px) {
+  .menu {
+    gap: 41px;
+  }
+}
 
 .menu__link {
   color: $color-font1;
@@ -61,37 +74,64 @@ height: 60px;
   font-size: 15px;  
 }
 
-.header__title {
+.phrase {
   background-color: $color-bg3;
   width: 290px;
   height: 80px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
   top: 387px;
+  text-align: center;
+  /*medidas movil 320*/
   padding-top: 14px;
   padding-bottom: 16px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 15px;
   margin-right: 15px;
-  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+/*medidas movil 375*/
+  @media (min-width: 375px) {
+  .phrase {
+  
+  margin-left: 42px;
+  margin-right: 42px;
+   
+  }
+}
+/*medidas movil 425*/
+@media (min-width: 425px) {
+  .phrase {
+  margin-left: 67.5px;
+  margin-right: 67.5px; 
+  }
 }
 /*header__title tablet*/
 @media (min-width: 768px) {
-  .header__title {
+  .phrase {
     width: 441px;
     height: 80px;
+    top: 343px;
+    margin-left: 46px;
     opacity: 0.8;
   }
 }
 /*header__title desktop*/
-@media (min-width: 1280px) {
-  .header__title {
+@media (min-width: 1024px) and (max-width:2000px) {
+  .phrase {
     width: 574px;
     height: 90px;
+    top: 331px;
     opacity: 0.8;
+    margin-left: 138px;
+    font-size: 24px;
   }
 }
