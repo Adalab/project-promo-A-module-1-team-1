@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <title>Formulario</title>
+</head>
+
+
+
+<body>
+    <load src="./partials/header.html" />
+
+
+
+
+    <form action="https://dev.adalab.es/api/form" method="post">
+        <fieldset>
+            <legend>Estamos encantados de conocerte 😊</legend>
+            <label for="name">Nombre:</label>
+            <input value="" type="text" id="name" placeholder="Ej: Paquita Salas">
+
+            <label for="age">Edad:</label>
+            <input value="" type="number" id="age" placeholder="Ej: 30">
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Dónde vives 🌍?</legend>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" placeholder="Ej: calle de Leganitos">
+
+            <label for="city">Población:</label>
+            <input type="text" id="city" placeholder="Ej: calle de Leganitos">
+
+            <label for="province">Provincia:</label>
+            <input type="text" id="province" placeholder="Ej: calle de Leganitos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Súper rápido tendrás noticias nuestras</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Ej: tuemail@mail.com">
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" min="9" max="10" placeholder="675307421">
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Quién te ha hecho ojitos 👀?</legend>
+            <label for="kitten">Nombre del gatito:</label>
+            <input type="text" id="kitten" placeholder="¿Qué necesitas?">
+
+            <label for="messege">Escribénos </label>
+            <input type="text" id="message" placeholder="Escribénos  ">
+        </fieldset>
+
+        <fieldset>
+            <legend>Háblanos de tu hogar 🏠:</legend>
+            <p>¿Cuántas personas sois en casa?</p>
+            <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
+            <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
+
+            <p>¿Y mascotas?</p>
+            <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
+            <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
+        </fieldset>
+
+
+
+
+
+        <input type="submit">
+
+
+        <p>Aquí va el formulario</p>
+    </form>
+</body>
+
+</html>
