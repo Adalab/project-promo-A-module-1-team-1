@@ -1,52 +1,72 @@
-.about-title {
-    text-transform: uppercase;
-    color: $color-bg1;
-    font-family: $font-1;
-    font-size: 24px;
-    font-weight: 500;
-}
-
 .about-us {
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
+
+    .about-title {
+        text-transform: uppercase;
+        color: $color-bg1;
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .adalaber {
+        margin-top: 30px;
+
+        .photo {
+            border: 5px solid lightgray;
+            border-radius: 5%;
+        }
+
+        .info {
+            margin: 0 15px;
+
+            .name {
+                font-family: $font-2;
+                font-size: 20px;
+                font-weight: 400;
+                margin: 15px 0;
+            }
+
+            .bio {
+                font-family: $font-2;
+                font-size: 16px;
+                font-weight: 100;
+            }
+
+            .contact {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: flex-start;
+                gap: 10px;
+                font-size: 20px;
+
+                .contact-icon {
+                    color: $color-bg1;
+                    height: 20px;
+                    width: 20px;
+                }
+
+                .point {}
+            }
+        }
+    }
 }
 
-.adalaber {
-    margin-top: 30px;
-}
 
-.contact {
-    margin: 15px 0 15px 0;
-    display: inline-block;
-}
-
-.contact-icon {
-    color: $color-bg1;
-    padding: 10px;
-}
-
-.name {
-    font-family: $font-2;
-    font-size: 20px;
-    font-weight: 300;
-    margin: 15px 0 15px 0;
-}
-
-.info {
-    margin: 0 15px 0 15px;
-
-}
-
-.bio {
-    font-family: $font-2;
-}
-
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
 
     .adalaber {
         display: flex;
         width: 100vw;
-        padding: 30px 45px 30px 45px;
+        padding: 0 45px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .adalaber1,
@@ -55,10 +75,10 @@
 
         .info {
             align-items: flex-start;
-        }
 
-        .bio {
-            text-align: left;
+            .bio {
+                text-align: left;
+            }
         }
     }
 
@@ -68,20 +88,10 @@
 
         .info {
             align-items: flex-end;
+
+            .bio {
+                text-align: right;
+            }
         }
-
-        .bio {
-            text-align: right;
-        }
-
     }
-
-    .info {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-
 }
