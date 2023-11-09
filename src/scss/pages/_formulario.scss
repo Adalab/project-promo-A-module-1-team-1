@@ -1,12 +1,22 @@
+:root {
+    padding-block: 0px;
+    padding-inline: 0px;
+}
 .form-main {
-
+    margin:0px 15px 0px 15px;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .introform {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    align-content: space-between;
-   padding: 30px 15px 21px 15px;
+   padding: 30px 0px 21px 0px;
+   margin: 13px 0px 40px 0px;
 
    height: 220px;
 }
@@ -29,13 +39,45 @@
 }
 
 /////////////* FORMULARIO */////////////////
+.input-title {
+    font-family: $font-2;
+    color: $color-font-form;
+    font-size: 14px;
+  
 
+}
 .input {
     width: 90vw;
     height: 45px;
+    margin: 9px 0px 9px 0px;
 }
 .motivation {
     width: 90vw;
     height: 105px;
+    margin: 0px 0px 8px 0px;
 
+}
+
+.legend {
+    background-color: $color-bg2;
+    width: 90vw;
+    height: 15px;
+    border-bottom: solid $color-bg1 2px;
+    border-top: solid $color-bg1 2px;
+    font-family: $font-2;
+    color: $color-font-form;
+    font-size: 14px;
+    margin: 7px 0px 16px 0px;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+.form-p {
+    font-family: $font-2;
+    color: $color-font-form;
+    font-size: 14px;
+} 
+.select {
+    font-family: $font-2;
+    color: $color-font-form;
+    font-size: 14px;
 }
