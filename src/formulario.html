@@ -10,77 +10,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./scss/main.scss">
-    <title>Formulario</title>
+    <title>✏ Escríbenos</title>
 </head>
 
 
 
 <body>
-    <load src="./partials/header.html" />
+    <header>
+        <section class="header">
+
+            <div class="header1">
+                <h1 class="header1__title">NOMBRE DEL GRUPO</h1>
+                <div class="header-ghost">
+                    <nav>
+                        <ul class="menu-ghost">
+                            <li><a class="ghost__link" href="partials/section1.html">EQUIPO</a></li>
+                            <li><a class="ghost__link" href="partials/section2.html">QUIENES SOMOS</a></li>
+                            <li><a class="ghost__link" href="./formulario.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header2">
+                <nav>
+                    <ul class="menu">
+                        <li><a class="menu__link" href="#equipo">EQUIPO</a></li>
+                        <li><a class="menu__link" href="./partials/section2.html#about">QUIENES SOMOS</a></li>
+                        <li><a class="menu__link" href="/src/contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+        <section class="introform">
+            <h1 class="form-title">CONTACTO</h1>
+            <P class="form-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas autem illum laborum, deserunt
+                possimus vel laboriosam.</P>
+            <p class="form_obligation">Todos los campos marcados con * son obligatorios.
+            </p>
+        </section>
 
 
+        <form action="https://" method="post">
+            
+            <fieldset>
+                <legend>Estamos encantados de conocerte 😊</legend>
+                <label for="name">Nombre:</label>
+                <input class="input" value="" type="text" id="name" placeholder="Ej: Paquita Salas">
+
+                <label for="age">Edad:</label>
+                <input class="input" value="" type="number" id="age" placeholder="Ej: 30">
+            
+
+            <fieldset>
+                <legend>¿Dónde vives 🌍?</legend>
+                <label for="address">Dirección:</label>
+                <input class="input" type="text" id="address" placeholder="Ej: calle de Leganitos">
+
+                <label for="city">Población:</label>
+                <input class="input" type="text" id="city" placeholder="Ej: calle de Leganitos">
+
+                <label for="province">Provincia:</label>
+                <input class="input" type="text" id="province" placeholder="Ej: Madrid">
+            </fieldset>
+
+            <fieldset>
+                <legend>Súper rápido tendrás noticias nuestras</legend>
+                <label for="email">Email:</label>
+                <input class="input" type="email" id="email" placeholder="Ej: tuemail@mail.com">
+
+                <label for="phone">Teléfono:</label>
+                <input class="input" type="tel" id="phone" min="9" max="10" placeholder="675307421">
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Quién te ha hecho ojitos 👀?</legend>
+                <label for="kitten">Nombre del gatito:</label>
+                <input class="input" type="text" id="kitten" placeholder="Ej: Conguito">
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuentanos porque te gustaría adoptar</legend>
+                <label for="messege"></label>
+                <input class="motivation" type="text" id="message" placeholder=" Ej: Me encantaria tener un kitten porque... ">
+            </fieldset>
+
+            <fieldset>
+                <legend>Háblanos de tu hogar 🏠:</legend>
+                <p>¿Cuántas personas sois en casa?</p>
+                <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
+                <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
+
+                <p>¿Y mascotas?</p>
+                <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
+                <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
+            </fieldset>
+
+            <input type="submit">
 
 
-    <form action="https://dev.adalab.es/api/form" method="post">
-        <fieldset>
-            <legend>Estamos encantados de conocerte 😊</legend>
-            <label for="name">Nombre:</label>
-            <input value="" type="text" id="name" placeholder="Ej: Paquita Salas">
+        </form>
+    </main>
 
-            <label for="age">Edad:</label>
-            <input value="" type="number" id="age" placeholder="Ej: 30">
-        </fieldset>
-
-        <fieldset>
-            <legend>¿Dónde vives 🌍?</legend>
-            <label for="address">Dirección:</label>
-            <input type="text" id="address" placeholder="Ej: calle de Leganitos">
-
-            <label for="city">Población:</label>
-            <input type="text" id="city" placeholder="Ej: calle de Leganitos">
-
-            <label for="province">Provincia:</label>
-            <input type="text" id="province" placeholder="Ej: calle de Leganitos">
-        </fieldset>
-
-        <fieldset>
-            <legend>Súper rápido tendrás noticias nuestras</legend>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Ej: tuemail@mail.com">
-
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" min="9" max="10" placeholder="675307421">
-        </fieldset>
-
-        <fieldset>
-            <legend>¿Quién te ha hecho ojitos 👀?</legend>
-            <label for="kitten">Nombre del gatito:</label>
-            <input type="text" id="kitten" placeholder="¿Qué necesitas?">
-
-            <label for="messege">Escribénos </label>
-            <input type="text" id="message" placeholder="Escribénos  ">
-        </fieldset>
-
-        <fieldset>
-            <legend>Háblanos de tu hogar 🏠:</legend>
-            <p>¿Cuántas personas sois en casa?</p>
-            <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
-            <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
-
-            <p>¿Y mascotas?</p>
-            <input type="radio" name="pets" id="yes-pets"><label for="pets">Sí</label>
-            <input type="radio" name="pets" id="no-pets"><label for="pets">No</label>
-        </fieldset>
-
-
-
-
-
-        <input type="submit">
-
-
-        <p>Aquí va el formulario</p>
-    </form>
+    <load src="./partials/footer.html" />
 </body>
 
 </html>
