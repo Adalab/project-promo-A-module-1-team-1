@@ -1,0 +1,38 @@
+.introform {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+   padding: 30px 15px 21px 15px;
+
+   height: 220px;
+}
+
+.form-title {
+    font-family: $font-1;
+    font-size: 24px;
+    color: $color-bg1;
+   
+
+}
+.form-p {
+    font-size: 16px;
+    font-family: $font-2;
+    text-align: center;
+}
+
+.form_obligation {
+    font-size: 12px;
+}
+
+/////////////* FORMULARIO */////////////////
+
+.input {
+    width: 90vw;
+    height: 45px;
+}
+.motivation {
+    width: 90vw;
+    height: 105px;
+
+}

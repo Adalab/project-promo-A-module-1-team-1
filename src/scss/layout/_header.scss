@@ -6,7 +6,7 @@
 /* General */
 .header {
   height: 42.1rem;
-  margin-bottom: 7.6rem;
+  margin-bottom: 1rem;
   background-image: url(/images/img1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,7 @@
 /* General */
 .phrase {
   background-color: $color-bg3;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-2;
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
@@ -176,3 +176,5 @@
     font-size: 24px;
   }
 }
+
+
