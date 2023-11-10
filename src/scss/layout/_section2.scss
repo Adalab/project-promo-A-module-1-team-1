@@ -48,6 +48,23 @@
                     color: $color-bg1;
                     height: 20px;
                     width: 20px;
+                    cursor: pointer;
+                }
+
+                @keyframes pulse {
+
+                    0%,
+                    100% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.5);
+                    }
+                }
+
+                .contact-icon:hover {
+                    animation: pulse 3s infinite;
                 }
 
                 .point {
