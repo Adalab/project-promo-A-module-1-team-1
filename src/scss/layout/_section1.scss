@@ -1,42 +1,60 @@
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transform: rotate(45deg) translate(10px, 10px);
+    margin: auto;
+}
+
 .team-box {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
 .team {
-    font-family: var(--rubik);
-    color: var(--blue-green);
+    font-family: $font-1;
+    color: $color-bg1;
     font-size: 24px;
     font-weight: 500;
 }
 
 .team+p {
-    font-family: var(--open-sans);
+    font-family: $font-2;
     text-align: center;
+    font-size: 16px;
+    font-weight: 200;
     margin: 30px;
 }
 
 .sandw-box {
-    background-color: lightgray;
-    display: inline-flex;
+    background-color: rgba(184,184,185,0.2);
+    width: 100%;
+    text-align: center;
+    padding: 30px 15px 45px 15px;
+    // display: inline-flex;
 }
 
 .sandw-box h2 {
     text-align: center;
-    font-family: var(--rubik);
-    color: var(--blue-green);
+    font-family: $font-1;
+    color: $color-bg1;
+    font-size: 22px;
+    line-height: 45px;
 }
 
 .strengths,
 .weaknesses {
-    font-family: var(--open-sans);
+    font-family: $font-2;
     height: 150px;
     padding: 10px;
     border: 5px;
     margin: 10px;
     box-sizing: content-box;
     text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 30px;
 }
 
 .strengths p,
