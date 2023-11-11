@@ -22,6 +22,7 @@
 /* Movil */
   justify-content: center;
   align-items: center;
+  opacity: 0.95
 }
 /* Tablet */
 @media (min-width: 768px) {
@@ -68,6 +69,7 @@
   justify-content: center;
   align-items: center;
   height: 4.5rem;
+  opacity: 0.95
 }
 /* Tablet y Desktop*/
 @media (min-width: 768px)and (max-width: 2000px){
