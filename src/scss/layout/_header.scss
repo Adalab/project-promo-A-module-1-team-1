@@ -7,10 +7,27 @@
 .header {
   height: 42.1rem;
   margin-bottom: 1rem;
-  background-image: url(/images/img1.jpg);
+  background-image: url(/images/alice1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: 0% 67%;
 }
+
+@media (min-width: 768px) {
+  .header {
+    background-size: cover;
+    background-position: 0% 44%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .header {
+    background-size: cover;
+    background-position: 0% 48%;
+  }
+}
+
 
 //////////* HEADER 1 *//////////
 
@@ -131,16 +148,18 @@
 
 /* General */
 .phrase {
+  width: 29rem;
+  height: 8rem;
   background-color: $color-bg3;
   font-family: $font-2;
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
   text-align: center;
-  padding: 14px 15px 15px 16px;
+  padding: 25px 15px 15px 16px;
 /* Movil 320 */
   margin: 15px 15px;
-  top: 36.7rem;
+  top: 34.7rem;
   font-size: 18px;
 }
 /* Movil 375 */
