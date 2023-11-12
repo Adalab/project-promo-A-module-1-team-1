@@ -1,53 +1,49 @@
 .about-us {
     text-align: center;
-    margin: 45px 0;
+    margin: 4.5rem 0;
 
     .about-title {
         text-transform: uppercase;
         color: $color-bg1;
-        font-family: $font-1;
-        font-size: 24px;
-        font-weight: 500;
+        font: 500 2.4rem $font-1;
     }
 
     .adalaber {
-        margin-top: 30px;
+        margin-top: 3rem;
 
         .photo {
-            border: 5px solid lightgray;
+            border: 0.5rem solid lightgray;
             border-radius: 5%;
+            height: 18rem;
+            width: 18rem;
         }
 
         .info {
-            margin: 0 15px;
+            margin: 0 2rem;
 
             .name {
-                font-family: $font-2;
-                font-size: 20px;
-                font-weight: 400;
-                margin: 15px 0;
+                font: 400 2rem $font-2;
+                margin: 1.5rem 0;
             }
 
             .bio {
-                font-family: $font-2;
-                font-size: 16px;
-                font-weight: 200;
+                font: 200 1.6rem $font-2;
                 color: $color-font-form;
             }
 
             .contact {
-                margin: 30px 0;
+                margin: 3rem 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
-                font-size: 20px;
+                gap: 1rem;
+                font-size: 2rem;
 
                 .contact-icon {
                     color: $color-bg1;
-                    height: 20px;
-                    width: 20px;
+                    height: 2rem;
+                    width: 2rem;
                     cursor: pointer;
                 }
 
@@ -68,10 +64,10 @@
                 }
 
                 .point {
-                    font-size: 30px;
+                    font-size: 3rem;
                     color: $color-font-form;
                     position: relative;
-                    top: -7px;
+                    top: -0.7rem;
                 }
             }
         }
@@ -84,11 +80,11 @@
     .adalaber {
         display: flex;
         width: 100vw;
-        padding: 0 45px;
+        padding: 0 4.5rem;
 
         .photo {
-            height: 205px;
-            width: 205px;
+            height: 20.5rem;
+            width: 20.5rem;
         }
 
         .info {
@@ -128,8 +124,8 @@
 
     .adalaber {
         .photo {
-            height: 280px;
-            width: 280px;
+            height: 28rem;
+            width: 280rem;
         }
 
         .info {
@@ -141,11 +137,11 @@
 
     .adalaber1,
     .adalaber3 {
-        padding-left: 140px;
+        padding-left: 14rem;
     }
 
     .adalaber2,
     .adalaber4 {
-        padding-right: 140px;
+        padding-right: 14rem;
     }
 }
