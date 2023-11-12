@@ -66,3 +66,39 @@
     border: none;
     cursor: pointer;
 }
+
+@media all and (min-width: 768px) {
+    .contact-main {
+        margin: 6rem 16.5rem;
+    }
+
+    .contact-send {
+        width: 20.5rem;
+        align-self: flex-end;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .contact-main {
+        margin: 12rem 30rem;
+    }
+
+    .contact-send {
+        width: 28rem;
+    }
+
+    .email-phone {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .field1 {
+        width: 40rem;
+        margin-right: 4.5rem;
+    }
+
+    .field2 {
+        width: 16rem;
+        align-self: flex-end;
+    }
+}
