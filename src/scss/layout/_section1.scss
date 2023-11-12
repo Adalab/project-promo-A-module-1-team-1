@@ -14,7 +14,7 @@
 
 .team {
     font-family: $font-1;
-    color: $color-bg1;
+    color: $color-bg2;
     font-size: 24px;
     font-weight: 500;
 }
@@ -28,7 +28,7 @@
 }
 
 .sandw-box {
-    background-color: rgba(184,184,185,0.2);
+    background-color: rgba(184, 184, 185, 0.2);
     width: 100%;
     text-align: center;
     padding: 30px 15px 45px 15px;
@@ -61,4 +61,10 @@
 .weaknesses p {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.strong {
+    font-weight: bold;
+    color: $color-bg1;
+    scale: 1.3;
 }
