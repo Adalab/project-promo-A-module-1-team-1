@@ -4,51 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/core/_reset.scss">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <title>✏ CONTACTO</title>
+    <link rel="icon" href="./images/favicon.ico" />
 </head>
-</head>
+
 
 <body>
     <header>
         <section class="header">
             <div class="header1">
-                <h1 class="header1__title">NOMBRE DEL GRUPO</h1>
+                <a class="menu__link" href="/index.html">
+                    <h1 class="header1__title">👩‍💻 ALICE-LAB</h1>
+                </a>
+                <div class="header-ghost">
+                    <nav>
+                        <ul class="menu-ghost">
+                            <li><a class="ghost__link" href="/index.html#team">EQUIPO</a></li>
+                            <li><a class="ghost__link" href="/index.html#about">QUIÉNES SOMOS</a></li>
+                            <li><a class="ghost__link" href="./formulario.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="header2">
                 <nav>
                     <ul class="menu">
-                        <li><a class="menu__link" href="#equipo">EQUIPO</a></li>
-                        <li><a class="menu__link" href="#quienesSomos">QUIENES SOMOS</a></li>
-                        <li><a class="menu__link" href="/src/contact.html">CONTACTO</a></li>
+                        <li><a class="menu__link" href="/index.html#team">EQUIPO</a></li>
+                        <li><a class="menu__link" href="/index.html#about">QUIÉNES SOMOS</a></li>
+                        <li><a class="menu__link" href="./formulario.html">CONTACTO</a></li>
                     </ul>
                 </nav>
+            </div>
         </section>
     </header>
 
-    <form action="contact">
-        <label for="name">
-            <span>Nombre Completo</span>
-            <input type="text" id="name" placeholder="Nombre...">
-        </label>
-        <label for="email">
-            <span>Email</span>
-            <input type="email" id="email" placeholder="nombre.apellido@mail.com">
-        </label>
-        <label for="phone">
-            <span>Teléfono</span>
-            <input type="tel" id="phone" placeholder="Ej: 123456789">
-        </label>
-        <label for="messege">
-            <span>Mensaje</span>
-            <input type="text" id="message" placeholder="¿Qué necesitas?">
-        </label>
-        <input type="submit">
+    <main class="contact-main">
+        <section class="contact-intro">
+            <h1 class="contact-title">CONTACTO</h1>
+            <P class="contact-text">Seguro que, después de nuestra introudcción, ahora tienes ganas de conocernos.
+                Comparte con nosotras cualquier comentario o pregunta, estaremos encantadas de contestarte.</P>
+            <p class="contact-warning">Todos los campos marcados con <span class="contact-star">*</span> son
+                obligatorios.
+            </p>
+        </section>
+
+        <form class="contact-form" action="/contact" method="post">
+            <label class="contact-field" for="name">
+                <span>Nombre completo <span class="contact-star">*</span></span>
+                <input class="contact-box" type="text" id="name" placeholder="Nombre...">
+            </label>
+            <label class="contact-field" for="email">
+                <span>Email <span class="contact-star">*</span></span>
+                <input class="contact-box" type="email" id="email" placeholder="nombre.apellidos@mail.com">
+            </label>
+            <label class="contact-field" for="phone">
+                <span>Teléfono</span>
+                <input class="contact-box" type="tel" id="phone" placeholder="Ej: 123456789">
+            </label>
+            <label class="contact-field" for="messege">
+                <span>Mensaje</span>
+                <input class="contact-box-2" type="text" id="message" placeholder="¿Qué necesitas?">
+            </label>
+        </form>
+
+        <div class="contact-send">
+            <input class="contact-button" type="submit" value="ENVIAR">
+        </div>
 
 
-    </form>
-    <button type="submit">ENVIAR</button>
-    <p>Aquí va el formulario</p>
+
+    </main>
+
+    <footer>
+        <load src="./partials/footer.html" />
+    </footer>
+
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
