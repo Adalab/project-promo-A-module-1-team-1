@@ -36,4 +36,8 @@
   color: var(--gunmetal);
   line-height: 2.14;
   text-align: right;
+  a {
+    text-decoration: none;
+    color: var(--gunmetal);
+  }
 }
