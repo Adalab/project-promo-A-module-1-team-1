@@ -90,15 +90,14 @@
     .email-phone {
         display: flex;
         flex-direction: row;
+        gap: 4.5rem;
     }
 
     .field1 {
-        width: 40rem;
-        margin-right: 4.5rem;
+        flex: 1;
     }
 
     .field2 {
         width: 16rem;
-        align-self: flex-end;
     }
 }
