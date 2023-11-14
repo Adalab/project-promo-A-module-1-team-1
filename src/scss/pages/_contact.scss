@@ -1,0 +1,104 @@
+.contact-main {
+    margin: 3rem 1.5rem;
+    color: $color-font-form;
+    font: 1.4rem $font-2;
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font: 2.4rem $font-1;
+    color: $color-bg1;
+}
+
+.contact-text {
+    font: 1.6rem $font-2;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.contact-warning {
+    font: 1.2rem $font-2;
+    margin-bottom: 6rem;
+}
+
+.contact-star {
+    color: $color-bg2;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.contact-box {
+    height: 4.5rem;
+}
+
+.contact-box-2 {
+    height: 10.5rem;
+    vertical-align: top;
+    padding-bottom: 15px;
+}
+
+.contact-send {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.contact-button {
+    background-color: $color-bg1;
+    color: white;
+    height: 4.5rem;
+    flex: 1;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+    .contact-main {
+        margin: 6rem 16.5rem;
+    }
+
+    .contact-send {
+        width: 20.5rem;
+        align-self: flex-end;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .contact-main {
+        margin: 12rem 30rem;
+    }
+
+    .contact-send {
+        width: 28rem;
+    }
+
+    .email-phone {
+        display: flex;
+        flex-direction: row;
+        gap: 4.5rem;
+    }
+
+    .field1 {
+        flex: 1;
+    }
+
+    .field2 {
+        width: 16rem;
+    }
+}
