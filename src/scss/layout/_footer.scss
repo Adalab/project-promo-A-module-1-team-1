@@ -1,43 +1,95 @@
-:root {
-  --cool-grey: #b8b8b9;
-  --white: #ffffff;
-  --gunmetal: #54585a;
-  --open-sans: 'Open Sans', sans-serif;
-}
 
 .page__footer {
   position: relative;
-  border-top: solid 1px var(--cool-grey);
-  padding:  24px 138px 47px;
+  border-top: solid 1px $color-font-form2;
+  padding:  30px 74px 45px 74px;
   background-color: var(--white);
+}
+@media (min-width: 768px) {
+  .page__footer {
+    padding:  30px 45px 56px 45px;
+  }
+}
+@media (min-width: 1280px) {
+  .page__footer {
+    padding:  30px 138px 51px 138px;
+  }
+}
+
+.footer-2 {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer-2 {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }
 
 .groupName {
-  margin: 6px 0 15px 0;
-  font-family: var(--open-sans);
-  line-height: 1.43;
-  color: var(--cool-grey);
+  font-family: $font-2;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $color-font-form2;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+@media (min-width: 768px) {
+  .groupName {
+    text-align: left;
+    display: inline;
+  
+  }
 }
 
 .adalabLogo {
   width: 115.9px;
   height: 45px;
-  margin: 15px 0 4px -10px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .adalabLogo{
+    margin: 15px 0px 4px 0px;
+  }
 }
 
 .secondaryMenu {
-  opacity: 0.75;
-  font-family: var(--open-sans);
-  font-size: 14px;
+  font-family: $font-2;
+  color: $color-font-form;
+  font-size: 1.4rem;
+  line-height: 2rem;
   font-weight: 600;
-  color: var(--gunmetal);
-  line-height: 2.14;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  opacity: 0.75;
+}
+
+  @media (min-width: 768px) {
+    .secondaryMenu {
+      align-items: flex-end;
+      margin-top: -23px;
+      
+    }
+  }
+
+
+
+
+  @media (min-width: 768px) {
+    .secondaryMenu {
+      line-height: 3rem;
+    }
+  }
+
+
   a {
     text-decoration: none;
     color: var(--gunmetal);
   }
-}
