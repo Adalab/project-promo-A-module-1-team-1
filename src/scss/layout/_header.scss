@@ -1,9 +1,3 @@
-:root {
-  font-size: 62.5%;
-}
-///////////////////////////////* HEADER *///////////////////////////////////
-
-/* General */
 .header {
   height: 42.1rem;
   margin-bottom: 1rem;
@@ -12,44 +6,28 @@
   background-size: contain;
   background-position: 0% 67%;
 }
-@media (max-width: 768px) {
-  .header {
-    background-size: cover;
-    background-position: 0% 44%;
-  }
-}
-
-/* Tablet */
-
-@media (min-width: 768px) and (max-width: 850px) {
+@media (min-width: 409px) {
   .header {
     background-size: cover;
     background-position: 0% 41%;
   }
 }
-
-/* Desktop */
-@media (min-width: 850px) and (max-width: 2000px) {
+@media (min-width: 850px) {
   .header {
-    background-size: cover;
-    background-position: 0% 48%;
+    background-position: 0% 52%;
   }
 }
 
-
 //////////* HEADER 1 *//////////
 
-/* General */
 .header1 {
   height: 6rem;
   background-color: $color-bg1;
   display: flex;
-/* Movil */
   justify-content: center;
   align-items: center;
   opacity: 0.95
 }
-/* Tablet */
 @media (min-width: 768px) {
   .header1 {
     justify-content: space-between;
@@ -57,8 +35,7 @@
     padding-right: 4.5rem;
   }
 }
-/* Desktop */
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 1024px) {
   .header1 {
     padding-left: 14.2rem;
     padding-right: 13.8rem;
@@ -67,94 +44,63 @@
 
 /////* NOMBRE DEL GRUPO */////
 
-/* General */
 .header1__title {
   font-family: $font-1;
   color: $color-font1;
   font-size: 1.6rem;
 }
 
-/////* HEADER-GHOST */////
+/////* MENU TABLET Y DESKTOP */////
 
-/* Movil */
- @media (min-width: 320px) and (max-width:425px) {
-  .header-ghost {
+ @media (max-width: 767px) {
+  .tablet-menu {
     display: none;
   }
 }
-
-//////////* HEADER 2 (visible sólo para móvil)*//////////
-
-/* Movil*/ 
-.header2 {
-  background-color: $color-bg2;
-  color: $color-font1;
-  font-family: $font-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4.5rem;
-  opacity: 0.95
-}
-/* Tablet y Desktop*/
-@media (min-width: 768px)and (max-width: 2000px){
-  .header2 {
-    display: none;
-  }
-}
-
-//////////* MENU (sólo para móvil) *//////////
-
-/* Movil 320 */ 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-/* Movil 375 */
-@media (min-width: 375px) {
-  .menu {
-    gap: 2.9rem;
-  }
-}
-/* Movil 425 */
-@media (min-width: 425px) {
-  .menu {
-    gap: 4.1rem;
-  }
-}
-
-//////////* MENU (sólo Tablet y Desktop) *//////////
-
-/* Tablet y Desktop */
-@media (min-width: 768px)and (max-width: 2000px) {
-  .menu-ghost {
+@media (min-width: 768px) {
+  .tablet__ul {
     display: flex;
     justify-content: space-between;
     gap: 1.9rem;
 }
 }
 
-//////////* ENLACES (sólo versión móvil)*//////////
-
-.menu__link {
-  color: $color-font1;
-  text-decoration: none;
-  font-size: 1.5rem;  
-}
-
-//////////* ENLACES (sólo versión Tablet y Desktop) */////////
-
-.ghost__link{
+.tablet__a{
   color: $color-font1;
   text-decoration: none;
   font-size: 1.5rem;  
   font-family: $font-1;
 }
 
+//////////* MENU MOVIL*//////////
+
+.header2 {
+  background-color: $color-bg2;
+  color: $color-font1;
+  font-family: $font-1;
+  height: 4.5rem;
+  opacity: 0.95;
+  padding: 15px 17px 15px 17px;
+}
+@media (min-width: 768px) {
+  .header2 {
+    display: none;
+  }
+}
+
+.movil-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.movil__a {
+  color: $color-font1;
+  text-decoration: none;
+  font-size: 1.5rem;  
+}
+
 //////////* FRASE DE EQUIPO *//////////
 
-/* General */
 .phrase {
   width: 29rem;
   height: 8rem;
@@ -165,41 +111,27 @@
   position: absolute;
   text-align: center;
   padding: 25px 15px 15px 16px;
-/* Movil 320 */
   margin: 15px 15px;
-  top: 34.7rem;
+  top: 33.4rem;
   font-size: 18px;
 }
-/* Movil 375 */
-  @media (min-width: 375px) {
-  .phrase {
-  margin: 0px 42px 0px 42px;
-  top: 37.7rem;
-  }
-}
-/* Movil 425 */
-@media (min-width: 425px) {
-  .phrase {
-  margin: 0px 67.5px 0px 67.5px;
- 
-  }
-}
+
 /* Tablet */
 @media (min-width: 768px) {
   .phrase {
     width: 44.1rem;
     height: 8rem;
-    top: 342px;
+    top: 327px;
     opacity: 0.8;
     margin-left: 46px;
   }
 }
 /* Desktop */
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 1024px){
   .phrase {
     width: 57.4rem;
     height: 9rem;
-    top: 332px;
+    top: 318px;
     opacity: 0.8;
     margin-left: 138px;
     font-size: 24px;
