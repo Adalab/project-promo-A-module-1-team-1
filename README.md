@@ -6,7 +6,7 @@ Somos "Alice-LAB" y este es nuestro primer proyecto por equipos de Adalab.
 
 Consiste en desarrollar nuestra primera web colaborativa.
 
-![Imagen de introducción](/public/images/alice1.jpg)
+![Imagen de introducción](/public/images/aliceweb.jpg)
 
 
 ## Tecnologías utilizadas:
