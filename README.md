@@ -18,5 +18,5 @@ Consiste en desarrollar nuestra primera web colaborativa.
 
 - Bessy Escobar
 - Antía Navajas
-- Izabela Ewa Wawrzyniak
+- Iza W.
 - Laura Montaño
